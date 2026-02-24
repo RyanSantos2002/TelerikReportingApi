@@ -1,0 +1,31 @@
+# Imagem base para rodar o app (apenas o runtime do .NET 8)
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER app
+WORKDIR /app
+# O .NET 8 escuta por padrão na porta 8080 em containers
+EXPOSE 8080 
+
+# Imagem do SDK para compilar a aplicação
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+
+# Copia apenas o .csproj primeiro para restaurar os pacotes (aproveita cache do Docker)
+COPY ["TelerikReportingApiNet8.csproj", "."]
+RUN dotnet restore "./TelerikReportingApiNet8.csproj"
+
+# Copia o resto dos arquivos e compila
+COPY . .
+WORKDIR "/src/."
+RUN dotnet build "./TelerikReportingApiNet8.csproj" -c $BUILD_CONFIGURATION -o /app/build
+
+# Publica a aplicação
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "./TelerikReportingApiNet8.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+# Gera a imagem final baseada na imagem de runtime (mais leve)
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "TelerikReportingApiNet8.dll"]
