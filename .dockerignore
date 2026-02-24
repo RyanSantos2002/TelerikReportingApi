@@ -17,6 +17,7 @@
 **/codeCoverage
 **/coverage
 **/obj
+!**/libs
 **/TestResults
 **/docker-compose*
 **/docker-compose*.*

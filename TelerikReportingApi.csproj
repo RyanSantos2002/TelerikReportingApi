@@ -19,23 +19,20 @@
 
   <ItemGroup>
     <Reference Include="Telerik.Reporting">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\netstandard2.0\Telerik.Reporting.dll</HintPath>
+      <HintPath>libs\Telerik.Reporting.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Reporting.Services.AspNetCore">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\net8.0\Telerik.Reporting.Services.AspNetCore.dll</HintPath>
+      <HintPath>libs\Telerik.Reporting.Services.AspNetCore.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.WebReportDesigner.Services">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\net8.0\Telerik.WebReportDesigner.Services.dll</HintPath>
+      <HintPath>libs\Telerik.WebReportDesigner.Services.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Reporting.Data.Schema">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\netstandard2.0\Telerik.Reporting.Data.Schema.dll</HintPath>
+      <HintPath>libs\Telerik.Reporting.Data.Schema.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Reporting.JsonSerialization">
-      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\netstandard2.0\Telerik.Reporting.JsonSerialization.dll</HintPath>
+      <HintPath>libs\Telerik.Reporting.JsonSerialization.dll</HintPath>
     </Reference>
-    <Reference Include="Telerik.Reporting.JsonSerialization">
-  <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\netstandard2.0\Telerik.Reporting.JsonSerialization.dll</HintPath>
-</Reference>
   </ItemGroup>
 
 </Project>
