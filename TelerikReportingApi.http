@@ -1,0 +1,6 @@
+@TelerikReportingApi_HostAddress = http://localhost:5241
+
+GET {{TelerikReportingApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

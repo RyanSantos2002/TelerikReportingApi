@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AlignTextBottomText" xml:space="preserve">
+    <value>Align text bottom</value>
+  </data>
+  <data name="AlignTextBottomDescription" xml:space="preserve">
+    <value>Align text to the bottom.</value>
+  </data>
+  <data name="AlignTextCenterText" xml:space="preserve">
+    <value>Center</value>
+  </data>
+  <data name="AlignTextCenterDescription" xml:space="preserve">
+    <value>Center text.</value>
+  </data>
+  <data name="AlignTextLeftText" xml:space="preserve">
+    <value>Align text left</value>
+  </data>
+  <data name="AlignTextLeftDescription" xml:space="preserve">
+    <value>Align text to the left.</value>
+  </data>
+  <data name="AlignTextMiddleText" xml:space="preserve">
+    <value>Align text middle</value>
+  </data>
+  <data name="AlignTextMiddleDescription" xml:space="preserve">
+    <value>Align text to the middle.</value>
+  </data>
+  <data name="AlignTextRightText" xml:space="preserve">
+    <value>Align text right</value>
+  </data>
+  <data name="AlignTextRightDescription" xml:space="preserve">
+    <value>Align text to the right.</value>
+  </data>
+  <data name="AlignTextTopText" xml:space="preserve">
+    <value>Align text top</value>
+  </data>
+  <data name="AlignTextTopDescription" xml:space="preserve">
+    <value>Align text to the top.</value>
+  </data>
+  <data name="FormatBoldText" xml:space="preserve">
+    <value>Bold</value>
+  </data>
+  <data name="FormatBoldDescription" xml:space="preserve">
+    <value>Make the selection bold. (CTRL+B)</value>
+  </data>
+  <data name="ClipboardCopy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="ClipboardCut" xml:space="preserve">
+    <value>Cut</value>
+  </data>
+  <data name="FormatItalicText" xml:space="preserve">
+    <value>Italic</value>
+  </data>
+  <data name="FormatItalicDescription" xml:space="preserve">
+    <value>Make the selection italic. (CTRL+I)</value>
+  </data>
+  <data name="ClipboardPaste" xml:space="preserve">
+    <value>Paste</value>
+  </data>
+  <data name="FormatStrikethroughText" xml:space="preserve">
+    <value>Strikethrough</value>
+  </data>
+  <data name="FormatStrikethroughDescription" xml:space="preserve">
+    <value>Draw line through the middle of the text.</value>
+  </data>
+  <data name="FormatUnderlineText" xml:space="preserve">
+    <value>Underline</value>
+  </data>
+  <data name="FormatUnderlineDescription" xml:space="preserve">
+    <value>Underline the selection. (CTRL +U)</value>
+  </data>
+  <data name="AlignBottomText" xml:space="preserve">
+    <value>Align Bottom</value>
+  </data>
+  <data name="AlignBottomDescription" xml:space="preserve">
+    <value>Align selected items to the bottom.</value>
+  </data>
+  <data name="AlignCenterText" xml:space="preserve">
+    <value>Align Center</value>
+  </data>
+  <data name="AlignCenterDescription" xml:space="preserve">
+    <value>Align selected items to the vertical center.</value>
+  </data>
+  <data name="AlignLeftText" xml:space="preserve">
+    <value>Align Left</value>
+  </data>
+  <data name="AlignLeftDescription" xml:space="preserve">
+    <value>Align selected items to the left.</value>
+  </data>
+  <data name="AlignMiddleDescription" xml:space="preserve">
+    <value>Align selected items to the horizonal center.</value>
+  </data>
+  <data name="AlignRightText" xml:space="preserve">
+    <value>Align Right</value>
+  </data>
+  <data name="AlignRightDescription" xml:space="preserve">
+    <value>Align selected items to the right.</value>
+  </data>
+  <data name="AlignToGridText" xml:space="preserve">
+    <value>Align to Grid</value>
+  </data>
+  <data name="AlignToGridDescription" xml:space="preserve">
+    <value>Align selected items to the grid.</value>
+  </data>
+  <data name="AlignTopText" xml:space="preserve">
+    <value>Align Top</value>
+  </data>
+  <data name="AlignTopDescription" xml:space="preserve">
+    <value>Align selected items to the top.</value>
+  </data>
+  <data name="BringToFrontText" xml:space="preserve">
+    <value>Bring to front</value>
+  </data>
+  <data name="BringToFrontDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="CenterHorizontallyText" xml:space="preserve">
+    <value>Center Horizontally</value>
+  </data>
+  <data name="CenterHorizontallyDescription" xml:space="preserve">
+    <value>Center selected items horizontally.</value>
+  </data>
+  <data name="CenterVerticallyText" xml:space="preserve">
+    <value>Center Vertically</value>
+  </data>
+  <data name="CenterVerticallyDescription" xml:space="preserve">
+    <value>Center selected items vertically.</value>
+  </data>
+  <data name="HorizSpaceConcatenateText" xml:space="preserve">
+    <value>Remove Horizontal Spacing.</value>
+  </data>
+  <data name="HorizSpaceConcatenateDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HorizSpaceDecreaseText" xml:space="preserve">
+    <value>Decrease Horizontal Spacing.</value>
+  </data>
+  <data name="HorizSpaceDecreaseDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HorizSpaceIncreaseText" xml:space="preserve">
+    <value>Increase Horizontal Spacing.</value>
+  </data>
+  <data name="HorizSpaceIncreaseDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HorizSpaceMakeEqualText" xml:space="preserve">
+    <value>Make Horizontal Spacing Equal.</value>
+  </data>
+  <data name="HorizSpaceMakeEqualDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="SendToBackText" xml:space="preserve">
+    <value>Send to back</value>
+  </data>
+  <data name="SendToBackDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VertSpaceConcatenateText" xml:space="preserve">
+    <value>Remove Vertical Spacing.</value>
+  </data>
+  <data name="VertSpaceConcatenateDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VertSpaceDecreaseText" xml:space="preserve">
+    <value>Decrease Vertical Spacing.</value>
+  </data>
+  <data name="VertSpaceDecreaseDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VertSpaceIncreaseText" xml:space="preserve">
+    <value>Increase Vertical Spacing.</value>
+  </data>
+  <data name="VertSpaceIncreaseDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="VertSpaceMakeEqualText" xml:space="preserve">
+    <value>Make Vertical Spacing Equal.</value>
+  </data>
+  <data name="VertSpaceMakeEqualDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AlignMiddleText" xml:space="preserve">
+    <value>Align Middle</value>
+  </data>
+  <data name="BorderText" xml:space="preserve">
+    <value>Border</value>
+  </data>
+  <data name="ClipboardText" xml:space="preserve">
+    <value>Clipboard</value>
+  </data>
+  <data name="FormatText" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="LayoutText" xml:space="preserve">
+    <value>Layout</value>
+  </data>
+  <data name="RenderingSettingsText" xml:space="preserve">
+    <value>Rendering</value>
+  </data>
+  <data name="BorderSide" xml:space="preserve">
+    <value>Border Side</value>
+  </data>
+  <data name="BorderSideDescription" xml:space="preserve">
+    <value>Change the border side.</value>
+  </data>
+  <data name="BorderStyle" xml:space="preserve">
+    <value>Border Style</value>
+  </data>
+  <data name="BorderStyleDescription" xml:space="preserve">
+    <value>Change the line style.</value>
+  </data>
+  <data name="BorderWidthText" xml:space="preserve">
+    <value>Border Width</value>
+  </data>
+  <data name="BorderWidthDescription" xml:space="preserve">
+    <value>Change the border width.</value>
+  </data>
+  <data name="FormatBackgroundColorText" xml:space="preserve">
+    <value>Background Color</value>
+  </data>
+  <data name="FormatBackgroundColorDescription" xml:space="preserve">
+    <value>Change the selected items background color.</value>
+  </data>
+  <data name="BorderSideAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="BorderSideBottom" xml:space="preserve">
+    <value>Bottom</value>
+  </data>
+  <data name="BorderSideLeft" xml:space="preserve">
+    <value>Left</value>
+  </data>
+  <data name="BorderSideRight" xml:space="preserve">
+    <value>Right</value>
+  </data>
+  <data name="BorderSideText" xml:space="preserve">
+    <value>Border Side</value>
+  </data>
+  <data name="BorderSideTop" xml:space="preserve">
+    <value>Top</value>
+  </data>
+  <data name="BorderStyleDashed" xml:space="preserve">
+    <value>Dashed</value>
+  </data>
+  <data name="BorderStyleDotted" xml:space="preserve">
+    <value>Dotted</value>
+  </data>
+  <data name="BorderStyleDouble" xml:space="preserve">
+    <value>Double</value>
+  </data>
+  <data name="BorderStyleGroove" xml:space="preserve">
+    <value>Groove</value>
+  </data>
+  <data name="BorderStyleInset" xml:space="preserve">
+    <value>Inset</value>
+  </data>
+  <data name="BorderStyleNone" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="BorderStyleRidge" xml:space="preserve">
+    <value>Ridge</value>
+  </data>
+  <data name="BorderStyleSolid" xml:space="preserve">
+    <value>Solid</value>
+  </data>
+  <data name="BorderStyleText" xml:space="preserve">
+    <value>Border Style</value>
+  </data>
+  <data name="FormatFontNameText" xml:space="preserve">
+    <value>Font name</value>
+  </data>
+  <data name="FormatFontNameDescription" xml:space="preserve">
+    <value>Change the selected text font.</value>
+  </data>
+  <data name="FormatFontSizeText" xml:space="preserve">
+    <value>Font size</value>
+  </data>
+  <data name="FormatFontSizeDescription" xml:space="preserve">
+    <value>Change the selected text font size.</value>
+  </data>
+  <data name="FormatForegroundColorDescription" xml:space="preserve">
+    <value>Change the selected text color.</value>
+  </data>
+  <data name="FormatForegroundColorText" xml:space="preserve">
+    <value>Font Color</value>
+  </data>
+  <data name="TabHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="TabInsert" xml:space="preserve">
+    <value>Insert</value>
+  </data>
+  <data name="TabView" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="ViewDebugGroup" xml:space="preserve">
+    <value>Debug</value>
+  </data>
+  <data name="ViewOutputWindow" xml:space="preserve">
+    <value>Output Window</value>
+  </data>
+  <data name="ViewPropertiesWindow" xml:space="preserve">
+    <value>Property Browser</value>
+  </data>
+  <data name="ViewStartupPage" xml:space="preserve">
+    <value>Startup Page</value>
+  </data>
+  <data name="ViewToolsGroup" xml:space="preserve">
+    <value>Tools</value>
+  </data>
+  <data name="ViewWindowsGroup" xml:space="preserve">
+    <value>Windows</value>
+  </data>
+  <data name="BorderStyleOutset" xml:space="preserve">
+    <value>Outset</value>
+  </data>
+  <data name="BorderColorDescription" xml:space="preserve">
+    <value>Change the border color.</value>
+  </data>
+  <data name="BorderColorText" xml:space="preserve">
+    <value>Border Color</value>
+  </data>
+  <data name="LayoutSizeHeightDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LayoutSizeHeightText" xml:space="preserve">
+    <value>Make Same Height</value>
+  </data>
+  <data name="LayoutSizeToControlDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LayoutSizeToControlText" xml:space="preserve">
+    <value>Make Same Size</value>
+  </data>
+  <data name="LayoutSizeToGridDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LayoutSizeToGridText" xml:space="preserve">
+    <value>Size to Grid</value>
+  </data>
+  <data name="LayoutSizeWidthDescription" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LayoutSizeWidthText" xml:space="preserve">
+    <value>Make Same Width</value>
+  </data>
+  <data name="ClearRecentDocumentsText" xml:space="preserve">
+    <value>Clear recent documents</value>
+  </data>
+  <data name="NewReportText" xml:space="preserve">
+    <value>New Report...</value>
+  </data>
+  <data name="OpenReportText" xml:space="preserve">
+    <value>Open Report...</value>
+  </data>
+  <data name="WelcomeText" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="ReadFileError" xml:space="preserve">
+    <value>Cannot read file: {0}</value>
+  </data>
+  <data name="ErrorFileCreation" xml:space="preserve">
+    <value>Error creating file</value>
+  </data>
+  <data name="ViewDiagnosticsGroup" xml:space="preserve">
+    <value>Diagnostics</value>
+  </data>
+  <data name="AlignTextJustifyText" xml:space="preserve">
+    <value>Justify</value>
+  </data>
+  <data name="AlignTextJustifyDescription" xml:space="preserve">
+    <value>Justify text.</value>
+  </data>
+  <data name="ClipboardCopyDescription" xml:space="preserve">
+    <value>CTRL+C</value>
+  </data>
+  <data name="ClipboardCutDescription" xml:space="preserve">
+    <value>CTRL+X</value>
+  </data>
+  <data name="ClipboardPasteDescription" xml:space="preserve">
+    <value>CTRL+V</value>
+  </data>
+  <data name="Options_DataConnectionsGroup_Title" xml:space="preserve">
+    <value>Data Connections</value>
+  </data>
+  <data name="Options_AssemblyReferencesOptionsGroup_Title" xml:space="preserve">
+    <value>Assembly References</value>
+  </data>
+  <data name="DataConnectionsOptionsModel_AddOrEditConnectionInfo_Error" xml:space="preserve">
+    <value>Problem while creating DataConnections dialog.</value>
+  </data>
+  <data name="DataConnectionsOptionsModel_RemoveDataConnectionItem_ConfirmRemove" xml:space="preserve">
+    <value>Are you sure you want to remove the selected data connection "{0}"?</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_RemoveAssemblyReferenceItem_ConfirmRemove" xml:space="preserve">
+    <value>Are you sure you want to remove the selected assembly reference "{0}"? Removing it may make any User Functions, Object Data Sources, Event Handlers, and Coded .NET Reports that depend on this assembly inaccessible.</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_RemoveAssemblyReferenceItem_ConfirmClear" xml:space="preserve">
+    <value>Are you sure you want to remove all assembly references? Removing them may make any User Functions, Object Data Sources, Event Handlers, and Coded .NET Reports that depend on these assemblies inaccessible.</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_RemoveAssemblyReferenceItem_ConfirmRemoveMultiple" xml:space="preserve">
+    <value>Are you sure you want to remove selected assembly references?</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_AddAssemblyReferenceItem_Exception" xml:space="preserve">
+    <value>Assembly reference with name "{0}" failed to load!</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_AddAssemblyReferenceItem_Error" xml:space="preserve">
+    <value>Assembly reference with the same name has been already added - "{0}"! If you want to replace it, first remove the old one!</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_RemoveAssemblyReferenceItem_RestartConfirmWhenDeleting" xml:space="preserve">
+    <value>Would you like to restart the application (if you plan to remove more files, please click "No" and remove them prior to restarting)?</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_RemoveAssemblyReferenceItem_DeleteError" xml:space="preserve">
+    <value>Assembly reference with name "{0}" is locked and cannot be removed!</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_RemoveAssemblyReferenceItem_Title" xml:space="preserve">
+    <value>Remove Assembly Reference?</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_RemoveAssemblyReferenceItem_MultipleDeleteError" xml:space="preserve">
+    <value>Assembly references with names {0} are locked and cannot be removed!</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_RemoveAssemblyReferenceItem_DeleteWhenAddingError" xml:space="preserve">
+    <value>Failed to move assembly with name "{0}" to base path because there is a file with that name already and it is currently in use! Remove the old assembly from the list of assembly references and restart the application before adding the new file!</value>
+  </data>
+  <data name="AssemblyReferencesOptionsModel_RemoveAssemblyReferenceItem_DeleteMultipleWhenAddingError" xml:space="preserve">
+    <value>Failed to move assemblies with names "{0}" to base path because there are a files with same name already and they are currently in use! Remove the old assemblies from the list of assembly references and restart the application before adding the new files!</value>
+  </data>
+  <data name="Options_GeneralGroup_Title" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Options_SelectFolderCommand_Description" xml:space="preserve">
+    <value>Select default New item directory</value>
+  </data>
+  <data name="PropertyBrowserToolWindow_Title" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="PropertyBrowser_Font_Name" xml:space="preserve">
+    <value>Segoe UI</value>
+  </data>
+  <data name="PropertyBrowser_Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="TabData" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="Options_Browse" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="Options_DefaultWorkingDir" xml:space="preserve">
+    <value>Default working directory:</value>
+  </data>
+  <data name="Options_DirectoryDoNotExist_Warning" xml:space="preserve">
+    <value>The specified directory does not exist.\r\nDo you want to create it now?</value>
+  </data>
+  <data name="Options_RestartRequired_Warning" xml:space="preserve">
+    <value>Application restart is required to apply these changes. Before restarting, save any open reports. Restart the application now?</value>
+  </data>
+  <data name="Option_AllowMultipleInstances" xml:space="preserve">
+    <value>Allow multiple application instances</value>
+  </data>
+  <data name="Option_BuildConnection_Button" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Option_AddAssembly_Button" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="Option_ClearAssemblyReferences_Button" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="AssemblyReferenceOptionsModel_AddAssemblyReference_Title" xml:space="preserve">
+    <value>Select Assembly Reference</value>
+  </data>
+  <data name="Option_Language" xml:space="preserve">
+    <value>Language:</value>
+  </data>
+  <data name="Option_PreserverOpenWindows" xml:space="preserve">
+    <value>Preserve open windows on exit:</value>
+  </data>
+</root>

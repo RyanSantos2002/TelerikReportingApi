@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="9.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="9.0.2" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.4" />
+    <PackageReference Include="System.IO.Packaging" Version="6.0.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Telerik.Reporting">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\netstandard2.0\Telerik.Reporting.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Services.AspNetCore">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\net8.0\Telerik.Reporting.Services.AspNetCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WebReportDesigner.Services">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\net8.0\Telerik.WebReportDesigner.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.Data.Schema">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\netstandard2.0\Telerik.Reporting.Data.Schema.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.JsonSerialization">
+      <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\netstandard2.0\Telerik.Reporting.JsonSerialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.Reporting.JsonSerialization">
+  <HintPath>C:\Program Files (x86)\Progress\Telerik Reporting 2026 Q1\Bin\netstandard2.0\Telerik.Reporting.JsonSerialization.dll</HintPath>
+</Reference>
+  </ItemGroup>
+
+</Project>

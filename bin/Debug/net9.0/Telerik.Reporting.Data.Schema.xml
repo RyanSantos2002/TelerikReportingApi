@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Reporting.Data.Schema</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Reporting.Data.Schema.Compact.MetadataResolverHost">
+            <summary>
+            In .NET Framework implementation this class handles the loading of OpenAccess assemblies in SRD's AppDomain.
+            In .NET Standard 2.0 apps the design-time is not used.
+            In .NET 6+ apps (SRD.NET, WRD, RS.NET) instead of OpenAccess assemblies, we use Telerik.OpenAccess, which is a .NET Standard 2.1 lame ripoff of OpenAccess assemblies.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.Compact.ObjectDataSourceParameter">
+            <summary>
+            Used for JSON serialization
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Data.Schema.ConnectionHelper.IsValidOpenEdgeConnection(System.Data.Odbc.OdbcFactory,System.String)">
+            <summary>
+            Tries to read the count of system tables from the OpenEdge server and returns true if any.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.SchemaRestrictionsInfo">
+            <summary>
+            Contains schema restriction information for database metadata queries.
+            Extends ConnectionInfo with additional filtering capabilities for database schema operations.
+            </summary>
+            <remarks>
+            Used by the query builder to apply specific restrictions when resolving database schema information such as tables, columns, and procedures.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.SchemaRestrictionsInfo.SchemaRestrictions">
+            <summary>
+            Gets or sets the restrictions used to filter database schema metadata.
+            Contains JSON or string-formatted restrictions that limit the scope of schema queries.
+            </summary>
+            <remarks>
+            These restrictions are applied when querying database metadata to limit results to specific schemas, tables, or other database objects.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.ConnectionInfo">
+            <summary>
+            Contains essential database connection information for establishing data connections.
+            Provides the core properties needed to connect to and identify database connections.
+            </summary>
+            <remarks>
+            This class serves as a base for database connection operations throughout the Web Report Designer and reporting services.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.ConnectionInfo.Name">
+            <summary>
+            Gets or sets the display name of the database connection.
+            Used for identification and display purposes in connection lists and user interfaces.
+            </summary>
+            <remarks>
+            This is typically a user-friendly name that helps identify the connection in dropdowns and configuration screens.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.ConnectionInfo.Provider">
+            <summary>
+            Gets or sets the data provider name that specifies the database type.
+            Determines which database driver and SQL dialect to use for the connection.
+            </summary>
+            <remarks>
+            Common values include "System.Data.SqlClient" for SQL Server, "System.Data.OleDb" for OLE DB connections, and other provider-specific names.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.ConnectionInfo.ConnectionString">
+            <summary>
+            Gets or sets the connection string containing database connection parameters.
+            Contains server location, credentials, database name, and other connection-specific settings.
+            </summary>
+            <remarks>
+            This property is required and must contain all necessary information to establish a database connection including server, authentication, and database details.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.DbProviderInfo">
+            <summary>
+            Provides information about a data provider.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.DbProviderInfo.Name">
+            <summary>
+            Specifies the data provider name.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.DbProviderInfo.Description">
+            <summary>
+            Specifies the data provider description.
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Data.Schema.DefaultParameterNameProvider.GetParameterPrefix(Telerik.Reporting.Data.Schema.DefaultParameterNameProvider.ParameterNameBuilder)">
+            <summary>
+            Returns the parameter placeholder string for a parameter ordinal.
+            NOTE: Respected is only the first character for easier comparison, because for MSSQL this method returns "@p0"
+            </summary>
+            <param name="parameterNameBuilder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.RootCategory">
+            <summary>
+            Used for schema retrieval in WRD.
+            TODO: Code duplication with Telerik.Reporting.Design.Common.ExpressionBuilder.CategoryAdapter.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.GenerateSqlInfo">
+            <summary>
+            Contains the information required to generate SQL statements from the visual query designer state.
+            Used to convert query designer configurations into executable SQL commands.
+            </summary>
+            <remarks>
+            This class serves as a data transfer object for SQL generation services in the Web Report Designer's query builder.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.GenerateSqlInfo.ProviderName">
+            <summary>
+            Gets or sets the data provider name that identifies the type of database connection.
+            Used to determine the correct SQL syntax and dialect for the target database.
+            </summary>
+            <remarks>
+            Specifies the database provider type (e.g., "System.Data.SqlClient", "System.Data.OleDb") for generating provider-specific SQL syntax.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.GenerateSqlInfo.ConnectionString">
+            <summary>
+            Gets or sets the connection string used to establish the database connection.
+            Contains all necessary parameters for connecting to the target database.
+            </summary>
+            <remarks>
+            Holds the complete connection string with server information, credentials, and database parameters for schema validation and query testing.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.GenerateSqlInfo.QueryDesignerState">
+            <summary>
+            Gets or sets the JSON serialized state of the visual query designer.
+            Contains the complete configuration of tables, fields, relations, and filters from the query builder interface.
+            </summary>
+            <remarks>
+            Contains JSON representation of tables, field selections, relationships, and filter criteria that gets converted into SQL SELECT statements.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.Interactive.MetadataResolverHost">
+            <summary>
+            In .NET Framework implementation this class handles the loading of OpenAccess assemblies in SRD's AppDomain.
+            In .NET Standard 2.0 apps the design-time is not used.
+            In .NET 6+ apps (SRD.NET, WRD, RS.NET) instead of OpenAccess assemblies, we use Telerik.OpenAccess, which is a .NET Standard 2.1 lame ripoff of OpenAccess assemblies.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.DynamicAssemblyLoadContext">
+            <summary>
+            Based on implementation from here: https://github.com/dotnet/runtime/issues/11566
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.DataSourceMemberAdapter.ApplyFilter">
+            <summary>
+            Only include members with DataObjectMethodAttribute applied
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.IObjectDataSourceTypesResolver">
+            <summary>
+            Represents a resolver that returns all types that can be used from the
+            object data source and the model of their members.
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.IObjectDataSourceTypesResolver.IsInProcess">
+            <summary>
+            Gets a value indicating whether the target types are available in the same application process.
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Data.Schema.IObjectDataSourceTypesResolver.GetTypeModel">
+            <summary>
+            Gets all types suitable for DataSource.
+            </summary>
+        </member>
+        <member name="M:Telerik.Reporting.Data.Schema.IObjectDataSourceTypesResolver.GetDataMemberModel(System.String,System.Boolean)">
+            <summary>
+            Gets all members of a type suitable for DataMember.
+            </summary>
+            <param name="typeName">Type name</param>
+            <param name="dataObjectMethodsOnly">Only include members with DataObjectMethodAttribute applied</param>
+        </member>
+        <member name="M:Telerik.Reporting.Data.Schema.IObjectDataSourceTypesResolver.GetDataMemberModel(System.Object,System.Boolean)">
+            <summary>
+            Gets all members of a type suitable for DataMember.
+            </summary>
+            <param name="instance">Instance</param>
+            <param name="dataObjectMethodsOnly">Only include members with DataObjectMethodAttribute applied.</param>
+        </member>
+        <member name="M:Telerik.Reporting.Data.Schema.IObjectDataSourceTypesResolver.GetDataModel(Telerik.Reporting.ObjectDataSource)">
+            <summary>
+            Gets the data schema (fields) of a configured object data source.
+            </summary>
+            <param name="dataSource">Data source</param>
+        </member>
+        <member name="M:Telerik.Reporting.Data.Schema.IObjectDataSourceTypesResolver.GetTypeMeasures(System.Type)">
+            <summary>
+            Gets the properties of the specified type.
+            </summary>
+            <param name="type">Type</param>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.ObjectBrowserImageHelper.AccessModifier">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.ObjectBrowserImageHelper.IconType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.ObjectDataSourceTypeHelper">
+            <summary>
+            Helper methods to list Type-s as object data source
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.ObjectDataSourceInstanceHelper">
+            <summary>
+            Helper methods to list instances (DataSet, etc.) as object data source
+            </summary>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.TypeInfo.ParentType">
+            <summary>
+            From Type.DeclaringType
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.OdbcParameterNameProvider">
+            <summary>
+            ODBC command doesn't support named parameters. It marks all the parameters with a "?" placeholder and access them sequentially.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.PreviewDataInfo">
+            <summary>
+            Contains query information and row limit settings for data preview operations.
+            </summary>
+            <remarks>
+            Used to limit the number of rows returned when previewing query results in the Web Report Designer.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.PreviewDataInfo.MaxRows">
+            <summary>
+            Gets or sets the maximum number of rows to return in preview operations.
+            </summary>
+            <remarks>
+            This property is required and prevents large datasets from overwhelming the preview interface.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.PreviewDataInfoWithParameters">
+            <summary>
+            Contains preview data information along with parameter values for parameterized queries.
+            </summary>
+            <remarks>
+            Used when executing preview queries that require parameter values to be provided.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.PreviewDataInfoWithParameters.PreviewDataInfo">
+            <summary>
+            Gets or sets the preview data configuration including query and row limits.
+            </summary>
+            <remarks>
+            This property is required and contains the base query information and preview settings.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.PreviewDataInfoWithParameters.Parameters">
+            <summary>
+            Gets or sets the collection of parameter values for the query execution.
+            </summary>
+            <remarks>
+            Contains the parameter names, values, and types needed to execute parameterized queries during preview.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.QueryInfo">
+            <summary>
+            Contains database query information including connection details and command configuration.
+            </summary>
+            <remarks>
+            Extends ConnectionInfo with query-specific properties for SQL execution and timeout settings.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.QueryInfo.SelectCommandType">
+            <summary>
+            Gets or sets the type of SQL command to execute (text or stored procedure).
+            </summary>
+            <remarks>
+            Determines whether the SelectCommand property contains SQL text or a stored procedure name.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.QueryInfo.SelectCommand">
+            <summary>
+            Gets or sets the SQL command text or stored procedure name to execute.
+            </summary>
+            <remarks>
+            This property is required and contains the actual SQL statement or procedure name for data retrieval.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.QueryInfo.CommandTimeout">
+            <summary>
+            Gets or sets the command timeout in seconds for query execution.
+            </summary>
+            <remarks>
+            Specifies how long to wait for the query to execute before timing out, with zero indicating no timeout.
+            </remarks>
+        </member>
+        <member name="M:Telerik.Reporting.Data.Schema.QueryInfo.#ctor">
+            <summary>
+            Initializes a new instance of the QueryInfo class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.QueryInfoWithParameters">
+            <summary>
+            Contains query information along with parameter values for parameterized query execution.
+            </summary>
+            <remarks>
+            Used when executing queries that require parameter values to be provided for proper execution.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.QueryInfoWithParameters.QueryInfo">
+            <summary>
+            Gets or sets the base query configuration including connection and command details.
+            </summary>
+            <remarks>
+            This property is required and contains the core query information needed for execution.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.QueryInfoWithParameters.Parameters">
+            <summary>
+            Gets or sets the collection of parameter values for the query execution.
+            </summary>
+            <remarks>
+            Contains the parameter names, values, and database types needed to execute parameterized queries.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Data.Schema.QueryInfoParameter">
+            <summary>
+            Represents a single parameter for database query execution with name, value, and type information.
+            </summary>
+            <remarks>
+            Used to pass typed parameter values to parameterized SQL queries and stored procedures.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.QueryInfoParameter.Name">
+            <summary>
+            Gets or sets the parameter name as it appears in the SQL query.
+            </summary>
+            <remarks>
+            This property is required and must match the parameter name in the SQL command text or stored procedure.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.QueryInfoParameter.Value">
+            <summary>
+            Gets or sets the parameter value to be passed to the query.
+            </summary>
+            <remarks>
+            The value type should be compatible with the specified DbType for proper query execution.
+            </remarks>
+        </member>
+        <member name="P:Telerik.Reporting.Data.Schema.QueryInfoParameter.DbType">
+            <summary>
+            Gets or sets the database type of the parameter for proper type conversion.
+            </summary>
+            <remarks>
+            This property is required and ensures the parameter value is converted to the correct database type during execution.
+            </remarks>
+        </member>
+        <member name="T:Telerik.Reporting.Design.Common.ExpressionBuilder.DesignReportExpressionContext">
+            <summary>
+            Used from the ExpressionBuilder.
+            Those entries are design-time only and will lead to incorrect behavior
+            if present at runtime.
+            </summary>
+        </member>
+    </members>
+</doc>

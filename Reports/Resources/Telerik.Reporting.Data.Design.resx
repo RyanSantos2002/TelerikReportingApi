@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CsvDataSource_ChooseDataSourcePage_UseFile" xml:space="preserve">
+    <value>Use external CSV file</value>
+  </data>
+  <data name="CsvDataSource_ChooseDataSourcePage_Kind" xml:space="preserve">
+    <value>Kind</value>
+  </data>
+  <data name="CsvDataSource_ChooseDataSourcePage_SelectFile" xml:space="preserve">
+    <value>Select a file</value>
+  </data>
+  <data name="CsvDataSource_ChooseDataSourcePage_EnterAsText" xml:space="preserve">
+    <value>Use CSV inline</value>
+  </data>
+  <data name="CsvDataSource_ChooseDataSourcePage_Description" xml:space="preserve">
+    <value>Select a file or enter the CSV as text to retrieve data.</value>
+  </data>
+  <data name="CsvDataSource_ChooseDataSourcePage_Title" xml:space="preserve">
+    <value>Choose a CSV Source</value>
+  </data>
+  <data name="CsvDataSource_ChooseDataSourcePage_InvalidPath" xml:space="preserve">
+    <value>The path is not valid.</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_SelectEscapeFormat" xml:space="preserve">
+    <value>Select Escape Format</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_BackslashAlternative" xml:space="preserve">
+    <value>Backslash Alternative</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_QuotesMixed" xml:space="preserve">
+    <value>Quotes Mixed</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_Backslash" xml:space="preserve">
+    <value>Backslash</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_SelectQuoteSymbol" xml:space="preserve">
+    <value>Select Quote Symbol</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_QuotesMixedEscapeFormats" xml:space="preserve">
+    <value>Applicable only for Quotes / Quotes Mixed escape formats</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_SingleQuote" xml:space="preserve">
+    <value>Single quote '</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_DoubleQuotes" xml:space="preserve">
+    <value>Double quotes "</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_CommentedRows" xml:space="preserve">
+    <value>Commented rows (optional)</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_CommentSymbol" xml:space="preserve">
+    <value>Comment symbol (usually #): </value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_Description" xml:space="preserve">
+    <value>Select the CSV escape format and the comments configuration.</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_Title" xml:space="preserve">
+    <value>Escape Format</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="CsvDataSource_ChooseEscapeFormatPage_Quotes" xml:space="preserve">
+    <value>Quotes</value>
+  </data>
+  <data name="CsvDataSource_ConfigureColumnsPage_ResetColumns" xml:space="preserve">
+    <value>Reset Columns</value>
+  </data>
+  <data name="CsvDataSource_ConfigureColumnsPage_AvailableColumns" xml:space="preserve">
+    <value>Available columns</value>
+  </data>
+  <data name="CsvDataSource_ConfigureColumnsPage_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CsvDataSource_ConfigureColumnsPage_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="CsvDataSource_ConfigureColumnsPage_CSVFieldsTypeConversion" xml:space="preserve">
+    <value>CSV Fields Type Conversion</value>
+  </data>
+  <data name="CsvDataSource_ConfigureColumnsPage_DateFormat" xml:space="preserve">
+    <value>Date format</value>
+  </data>
+  <data name="CsvDataSource_ConfigureColumnsPage_ThousandSeparator" xml:space="preserve">
+    <value>Thousand separator</value>
+  </data>
+  <data name="CsvDataSource_ConfigureColumnsPage_DecimalSeparator" xml:space="preserve">
+    <value>Decimal separator</value>
+  </data>
+  <data name="CsvDataSource_ConfigureColumnsPage_Description" xml:space="preserve">
+    <value>Map the CSV columns to a known type</value>
+  </data>
+  <data name="ConfigureColumnsPage_InitializeComponent_Title" xml:space="preserve">
+    <value>Map columns to type</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_FieldSeparators" xml:space="preserve">
+    <value>Field (column) separators</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_Space" xml:space="preserve">
+    <value>Space</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_Tab" xml:space="preserve">
+    <value>Tab</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_Semicolon" xml:space="preserve">
+    <value>Semicolon</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_Comma" xml:space="preserve">
+    <value>Comma</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_TreatConsecutiveFieldSeparatorsAsOne" xml:space="preserve">
+    <value>Treat consecutive field separators as one</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_RecordSeparators" xml:space="preserve">
+    <value>Record (row) separators</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_NewLine" xml:space="preserve">
+    <value>New line (\r\n)</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_Description" xml:space="preserve">
+    <value>Configure the separators used for row and column delimiting.</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_Title" xml:space="preserve">
+    <value>Configure the separators</value>
+  </data>
+  <data name="CsvDataSourceWizard_Text" xml:space="preserve">
+    <value>Configure CSV Data Source - {0}</value>
+  </data>
+  <data name="CsvDataSource_HasHeadersPage_TheCsvHasHeaders" xml:space="preserve">
+    <value>The CSV has headers</value>
+  </data>
+  <data name="CsvDataSource_HasHeadersPage_Description" xml:space="preserve">
+    <value>Determine if the CSV source contains header row</value>
+  </data>
+  <data name="CsvDataSource_HasHeadersPage_CsvHeaders" xml:space="preserve">
+    <value>CSV Headers</value>
+  </data>
+  <data name="CsvDataSource_PreviewDataSourcePage_TotalRowCount" xml:space="preserve">
+    <value>Total row count: {0} rows.</value>
+  </data>
+  <data name="CsvDataSource_PreviewDataSourcePage_ThePreviewShows" xml:space="preserve">
+    <value> The preview shows the first {0} columns.</value>
+  </data>
+  <data name="CsvDataSource_PreviewDataSourcePage_DataSourceResults" xml:space="preserve">
+    <value>Data source results</value>
+  </data>
+  <data name="CsvDataSource_PreviewDataSourcePage_ParseCSV" xml:space="preserve">
+    <value>Parse CSV...</value>
+  </data>
+  <data name="CsvDataSource_PreviewDataSourcePage_ClickParse" xml:space="preserve">
+    <value>Click 'Parse CSV' to preview the data source results...</value>
+  </data>
+  <data name="CsvDataSource_PreviewDataSourcePage_Description" xml:space="preserve">
+    <value>Preview the result set returned by this data source.</value>
+  </data>
+  <data name="CsvDataSource_PreviewDataSourcePage_Title" xml:space="preserve">
+    <value>Preview Data Source Results</value>
+  </data>
+  <data name="CubeDataSource_ChooseConnectionPage_ChooseExisting" xml:space="preserve">
+    <value>Choose an existing data connection</value>
+  </data>
+  <data name="CubeDataSource_ChooseConnectionPage_SpecifyNewConnection" xml:space="preserve">
+    <value>Specify a new connection string</value>
+  </data>
+  <data name="CubeDataSource_ChooseConnectionPage_Build" xml:space="preserve">
+    <value>Build...</value>
+  </data>
+  <data name="CubeDataSource_ChooseConnectionPage_Description" xml:space="preserve">
+    <value>Choose which data connection should your data source use to connect to the database or specify a new connection string.</value>
+  </data>
+  <data name="CubeDataSource_ChooseConnectionPage_Title" xml:space="preserve">
+    <value>Choose Your Data Connection</value>
+  </data>
+  <data name="CubeDataSource_ConfigureCommandPage_MdxSelectStatement" xml:space="preserve">
+    <value>MDX select statement</value>
+  </data>
+  <data name="CubeDataSource_ConfigureCommandPage_Description" xml:space="preserve">
+    <value>Specify an MDX select statement to retrieve data for the data source.</value>
+  </data>
+  <data name="CubeDataSource_ConfigureCommandPage_Title" xml:space="preserve">
+    <value>Configure Data Source Command</value>
+  </data>
+  <data name="CubeDataSource_ConfigureConnectionPage_SaveQuestionLabel" xml:space="preserve">
+    <value>Do you want to save the connection string in the application configuration file?</value>
+  </data>
+  <data name="CubeDataSource_ConfigureConnectionPage_SaveConnection" xml:space="preserve">
+    <value>Yes, save this connection string with the following name:</value>
+  </data>
+  <data name="CubeDataSource_ConfigureConnectionPage_Description" xml:space="preserve">
+    <value>Storing the connection string in the application configuration file simplifies the maintenance and deployment of your reports.</value>
+  </data>
+  <data name="CubeDataSource_ConfigureConnectionPage_Title" xml:space="preserve">
+    <value>Save the Connection String</value>
+  </data>
+  <data name="CubeDataSource_ConfigureMappingsPage_EmptyFieldAliasError" xml:space="preserve">
+    <value>Field alias cannot be empty.</value>
+  </data>
+  <data name="CubeDataSource_ConfigureMappingsPage_DuplicateFieldAliasError" xml:space="preserve">
+    <value>Duplicate field alias: '{0}'.</value>
+  </data>
+  <data name="CubeDataSource_ConfigureMappingsPage_DataSourceFields" xml:space="preserve">
+    <value>Data source fields</value>
+  </data>
+  <data name="CubeDataSource_ConfigureMappingsPage_Field" xml:space="preserve">
+    <value>Field</value>
+  </data>
+  <data name="CubeDataSource_ConfigureMappingsPage_Alias" xml:space="preserve">
+    <value>Alias</value>
+  </data>
+  <data name="CubeDataSource_ConfigureMappingsPage_Description" xml:space="preserve">
+    <value>Specify a short alias for each field from the data source. This makes it easier to reference the fields for data binding in expressions.</value>
+  </data>
+  <data name="CubeDataSource_ConfigureMappingsPage_Title" xml:space="preserve">
+    <value>Configure Data Source Fields</value>
+  </data>
+  <data name="CubeDataSource_ConfigureParametersPage_ParameterNameCannotBeEmpty" xml:space="preserve">
+    <value>Parameter name cannot be empty.</value>
+  </data>
+  <data name="CubeDataSource_ConfigureParametersPage_DuplicateParameterName" xml:space="preserve">
+    <value>Duplicate parameter name: '{0}'.</value>
+  </data>
+  <data name="ConfigureParametersPage_Description" xml:space="preserve">
+    <value>Specify a default value or an expression to evaluate for each data source parameter.</value>
+  </data>
+  <data name="ConfigureParametersPage_Title" xml:space="preserve">
+    <value>Configure Data Source Parameters</value>
+  </data>
+  <data name="CubeDataSource_ConnectionStringDialog_TestConnectionSuccess" xml:space="preserve">
+    <value>Test connection succeeded.</value>
+  </data>
+  <data name="CubeDataSource_ConnectionStringDialog_ServerName" xml:space="preserve">
+    <value>Server name:</value>
+  </data>
+  <data name="CubeDataSource_ConnectionStringDialog_DatabaseName" xml:space="preserve">
+    <value>Database name:</value>
+  </data>
+  <data name="CubeDataSource_ConnectionStringDialog_TestConnection" xml:space="preserve">
+    <value>&amp;Test connection</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="CubeDataSource_ConnectionStringDialog_ConnectionProperties" xml:space="preserve">
+    <value>Connection Properties</value>
+  </data>
+  <data name="CubeDataSource_Text" xml:space="preserve">
+    <value>Configure Cube Data Source - {0}</value>
+  </data>
+  <data name="DesignerParametersPage_DesignTimeParameters" xml:space="preserve">
+    <value>Design time parameters:</value>
+  </data>
+  <data name="DesignerParametersPage_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DesignerParametersPage_Value" xml:space="preserve">
+    <value>Constant Value</value>
+  </data>
+  <data name="DesignerParametersPage_Value_Tooltip" xml:space="preserve">
+    <value>Constant Value (expressions not supported)</value>
+  </data>
+  <data name="DesignerParametersPage_Description" xml:space="preserve">
+    <value>Specify an appropriate design time value for each data source parameter. This is necessary for retrieving the data source schema correctly at design time. The design time value must be a constant, since expressions are not supported.</value>
+  </data>
+  <data name="DesignerParametersPage_Title" xml:space="preserve">
+    <value>Configure Design Time Parameters</value>
+  </data>
+  <data name="CubeDataSource_EnterConnectionPage_Build" xml:space="preserve">
+    <value>Build...</value>
+  </data>
+  <data name="CubeDataSource_EnterConnectionPage_ConnectionString" xml:space="preserve">
+    <value>Connection String</value>
+  </data>
+  <data name="CubeDataSource_EnterConnectionPage_Description" xml:space="preserve">
+    <value>Enter data connection that your data source should use to connect to the database.</value>
+  </data>
+  <data name="CubeDataSource_EnterConnectionPage_Title" xml:space="preserve">
+    <value>Enter Your Data Connection</value>
+  </data>
+  <data name="CubeDataSource_PreviewDataSourcePage_Summary" xml:space="preserve">
+    <value>Total row count: {0} rows.</value>
+  </data>
+  <data name="EntityDataSource_ChooseConnectionPage_ChooseConnection" xml:space="preserve">
+    <value>Choose an existing data connection</value>
+  </data>
+  <data name="EntityDataSource_ChooseConnectionPage_SpecifyNewConnection" xml:space="preserve">
+    <value>Specify a new connection string</value>
+  </data>
+  <data name="EntityDataSource_ChooseConnectionPage_Description" xml:space="preserve">
+    <value>Choose which data connection should your data source use to connect to the database or specify a new connection string.</value>
+  </data>
+  <data name="EntityDataSource_ChooseConnectionPage_Title" xml:space="preserve">
+    <value>Choose Your Data Connection</value>
+  </data>
+  <data name="EntityDataSource_ChooseContextMemberPage_Label" xml:space="preserve">
+    <value>Choose a context member</value>
+  </data>
+  <data name="EntityDataSource_ChooseContextMemberPage_Description" xml:space="preserve">
+    <value>Choose a member of the context that returns data.</value>
+  </data>
+  <data name="EntityDataSource_ChooseContextMemberPage_Title" xml:space="preserve">
+    <value>Choose a context member</value>
+  </data>
+  <data name="CubeDataSource_ChooseContextPage_ResolveContextError" xml:space="preserve">
+    <value>Unable to resolve the context. Try to restart Visual Studio and check you data model.</value>
+  </data>
+  <data name="CubeDataSource_ChooseContextPage_Label" xml:space="preserve">
+    <value>Choose a context (DbContext or ObjectContext)</value>
+  </data>
+  <data name="CubeDataSource_ChooseContextPage_Description" xml:space="preserve">
+    <value>Choose a context that can be used to retrieve data. Make sure that the current project is built for the types to show up in the list.</value>
+  </data>
+  <data name="CubeDataSource_ChooseContextPage_Title" xml:space="preserve">
+    <value>Choose a context (DbContext or ObjectContext)</value>
+  </data>
+  <data name="DuplicateConnectionName" xml:space="preserve">
+    <value>A connection string named '{0}' already exists.
+Please choose a different name.</value>
+  </data>
+  <data name="InvalidConnectionName" xml:space="preserve">
+    <value>The specified connection name is not valid: {0}.
+Please enter a valid name.</value>
+  </data>
+  <data name="EntityDataSource_ConfigureConnectionPage_SaveQuestionLabel" xml:space="preserve">
+    <value>Do you want to save the connection string in the application configuration file?</value>
+  </data>
+  <data name="EntityDataSource_ConfigureConnectionPage_SaveConnectionCheckbox" xml:space="preserve">
+    <value>Yes, save this connection string with the following name:</value>
+  </data>
+  <data name="EntityDataSource_ConfigureConnectionPage_Description" xml:space="preserve">
+    <value>Storing the connection string in the application configuration file simplifies the maintenance and deployment of your reports.</value>
+  </data>
+  <data name="EntityDataSource_ConfigureConnectionPage_Title" xml:space="preserve">
+    <value>Save the Connection String</value>
+  </data>
+  <data name="EntityDataSource_Text" xml:space="preserve">
+    <value>Configure Entity Data Source - {0}</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataMemberPage_CanNotLoadObjectMembers" xml:space="preserve">
+    <value>Can not load the selected object members. Try to restart the development environment and verify your data model.</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataMemberPage_EmptyMemberWarning" xml:space="preserve">
+    <value>You have selected an abstract/static class as your Business Object. You should select a data member of your class in order to use it as a valid data source.</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataMemberPage_NoDataSourceMember" xml:space="preserve">
+    <value>No data source member</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataMemberPage_ChooseDataSourceMember" xml:space="preserve">
+    <value>Choose a data source member</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataMemberPage_Description" xml:space="preserve">
+    <value>Choose a member of the business object that returns data.</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataMemberPage_Title" xml:space="preserve">
+    <value>Choose a Data Member</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataSourcePage_ShowDataComponentsOnly" xml:space="preserve">
+    <value>Show data components only</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataSourcePage_AvailableDataSourceTypes" xml:space="preserve">
+    <value>Available data source types</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataSourcePage_ExistingDataSourceComponents" xml:space="preserve">
+    <value>Existing data source components</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataSourcePage_Description" xml:space="preserve">
+    <value>Choose a business object that can be used to retrieve data. Make sure that the current project is built for the types to show up in the list.</value>
+  </data>
+  <data name="ObjectDataSource_ChooseDataSourcePage_Title" xml:space="preserve">
+    <value>Choose a Business Object</value>
+  </data>
+  <data name="ObjectDataSource_Text" xml:space="preserve">
+    <value>Configure Object Data Source - {0}</value>
+  </data>
+  <data name="OpenAccess_ChooseConnectionPage_Label" xml:space="preserve">
+    <value>Data Connection</value>
+  </data>
+  <data name="OpenAccess_ChooseConnectionPage_NewConnection" xml:space="preserve">
+    <value>New Connection...</value>
+  </data>
+  <data name="OpenAccess_ChooseConnectionPage_ConnectionString" xml:space="preserve">
+    <value>Connection String</value>
+  </data>
+  <data name="OpenAccess_ChooseConnectionPage_Description" xml:space="preserve">
+    <value>Choose which data connection should your data source use to connect to the database or create a new data connection.</value>
+  </data>
+  <data name="OpenAccess_ChooseConnectionPage_Title" xml:space="preserve">
+    <value>Choose Your Data Connection</value>
+  </data>
+  <data name="OpenAccess_ChooseObjectContextPage_Label" xml:space="preserve">
+    <value>Choose an object context</value>
+  </data>
+  <data name="OpenAccess_ChooseObjectContextPage_Desciption" xml:space="preserve">
+    <value>Choose an object context that can be used to retrieve data. Make sure that the current project is built for the types to show up in the list.</value>
+  </data>
+  <data name="OpenAccess_ChooseObjectContextPage_Title" xml:space="preserve">
+    <value>Choose an Object Context</value>
+  </data>
+  <data name="OpenAccess_ChooseObjectMemberPage_Label" xml:space="preserve">
+    <value>Choose an object context member</value>
+  </data>
+  <data name="OpenAccess_ChooseObjectMemberPage_Description" xml:space="preserve">
+    <value>Choose a member of the object context that returns data.</value>
+  </data>
+  <data name="OpenAccess_ChooseObjectMemberPage_Title" xml:space="preserve">
+    <value>Choose an Object Context Member</value>
+  </data>
+  <data name="OpenAccess_ConfigureConnectionPage_SaveQuestion" xml:space="preserve">
+    <value>Do you want to save the connection string in the application configuration file?</value>
+  </data>
+  <data name="OpenAccess_ConfigureConnectionPage_SaveCheckbox" xml:space="preserve">
+    <value>Yes, save this connection string with the following name:</value>
+  </data>
+  <data name="OpenAccess_ConfigureConnectionPage_Description" xml:space="preserve">
+    <value>Storing the connection string in the application configuration file simplifies the maintenance and deployment of your reports.</value>
+  </data>
+  <data name="OpenAccess_ConfigureConnectionPage_Title" xml:space="preserve">
+    <value>Save the Connection String</value>
+  </data>
+  <data name="OpenAccess_Text" xml:space="preserve">
+    <value>Configure Open Access Data Source - {0}</value>
+  </data>
+  <data name="OpenClientDataSource_ChooseAppObjectPage_LoadTypeModelError" xml:space="preserve">
+    <value>Selected assembly and its references are not appropriate. Please select .NET Open Client proxy assembly: </value>
+  </data>
+  <data name="OpenClientDataSource_ChooseAppObjectPage_Description" xml:space="preserve">
+    <value>Select the proxy type which will be used to retrieve data.</value>
+  </data>
+  <data name="DataSource_DescriptionLabel" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="OpenClientDataSource_ChooseAppObjectPage_Title" xml:space="preserve">
+    <value>Choose object</value>
+  </data>
+  <data name="OpenClientDataSource_AssemblyPage_Select" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="OpenClientDataSource_AssemblyPage_ProxyAssembly" xml:space="preserve">
+    <value>Proxy assembly</value>
+  </data>
+  <data name="OpenClientDataSource_AssemblyPage_AssemblyReferences" xml:space="preserve">
+    <value>Assembly references</value>
+  </data>
+  <data name="OpenClientDataSource_AssemblyPage_SelectAssembly" xml:space="preserve">
+    <value>Select an assembly that contains AppObject</value>
+  </data>
+  <data name="OpenClientDataSource_AssemblyPage_Description" xml:space="preserve">
+    <value>Select .NET proxy assembly generated using the OpenEdge Proxy Generator tool that will be used to retrieve the data.</value>
+  </data>
+  <data name="OpenClientDataSource_AssemblyPage_Title" xml:space="preserve">
+    <value>Choose assemblies</value>
+  </data>
+  <data name="OpenClientDataSource_AssemblyPage_FileFilter_AllFiles" xml:space="preserve">
+    <value>All Files</value>
+  </data>
+  <data name="OpenClientDataSource_AssemblyPage_FileFilter_Assemblies" xml:space="preserve">
+    <value>Assemblies</value>
+  </data>
+  <data name="OpenClientDataSource_DataMemberPage_Description" xml:space="preserve">
+    <value>Select a data table from the data set that will be used to retrieve the data</value>
+  </data>
+  <data name="OpenClientDataSource_DataMemberPage_Title" xml:space="preserve">
+    <value>Choose data table</value>
+  </data>
+  <data name="OpenClientDataSource_ProcedurePage_Description" xml:space="preserve">
+    <value>Choose an AppObject procedure.</value>
+  </data>
+  <data name="OpenClientDataSource_ProcedurePage_Title" xml:space="preserve">
+    <value>Choose procedure</value>
+  </data>
+  <data name="OpenClientDataSource_Title" xml:space="preserve">
+    <value>Select a procedure from type '{0}'</value>
+  </data>
+  <data name="OpenClientDataSource_NoSuitableProcedure" xml:space="preserve">
+    <value>No suitable procedures found.</value>
+  </data>
+  <data name="OpenClientDataSource_SettingsPage_SessionModel" xml:space="preserve">
+    <value>Session model</value>
+  </data>
+  <data name="OpenClientDataSource_SettingsPage_ConnectionURL" xml:space="preserve">
+    <value>Connection URL</value>
+  </data>
+  <data name="OpenClientDataSource_SettingsPage_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="OpenClientDataSource_SettingsPage_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="OpenClientDataSource_SettingsPage_AppServerInfo" xml:space="preserve">
+    <value>App server info (optional)</value>
+  </data>
+  <data name="OpenClientDataSource_SettingsPage_SessionManaged" xml:space="preserve">
+    <value>Session managed</value>
+  </data>
+  <data name="OpenClientDataSource_SettingsPage_SessionFree" xml:space="preserve">
+    <value>Session free</value>
+  </data>
+  <data name="OpenClientDataSource_SettingsPage_Description" xml:space="preserve">
+    <value>Enter your OpenEdge OpenClient connection settings.</value>
+  </data>
+  <data name="OpenClientDataSource_SettingsPage_Title" xml:space="preserve">
+    <value>Set up the connection</value>
+  </data>
+  <data name="OpenClientDataSource_Text" xml:space="preserve">
+    <value>Configure OpenEdge Open Client Data Source - {0}</value>
+  </data>
+  <data name="OpenClientDataSource_TypeNotFound" xml:space="preserve">
+    <value>Type '{0}' not found.</value>
+  </data>
+  <data name="SqlDataSource_CommandPage_SelectStatement" xml:space="preserve">
+    <value>Select Statement</value>
+  </data>
+  <data name="SqlDataSource_CommandPage_SchemaRestrictions" xml:space="preserve">
+    <value>Schema Restrictions</value>
+  </data>
+  <data name="SqlDataSource_CommandPage_QueryBuilder" xml:space="preserve">
+    <value>Query Builder...</value>
+  </data>
+  <data name="SqlDataSource_CommandPage_StoredProcedure" xml:space="preserve">
+    <value>Stored Procedure</value>
+  </data>
+  <data name="SqlDataSource_CommandPage_Description" xml:space="preserve">
+    <value>Specify a select statement or a stored procedure to retrieve data for the data source.</value>
+  </data>
+  <data name="SqlDataSource_CommandPage_Title" xml:space="preserve">
+    <value>Configure data source command</value>
+  </data>
+  <data name="SqlDataSource_CommandPage_ParameterInformationCannotBeRetrieved" xml:space="preserve">
+    <value>Parameter information cannot be retrieved: </value>
+  </data>
+  <data name="SqlDataSource_CommandPage_CheckingDatabaseSupport" xml:space="preserve">
+    <value>Checking database support...</value>
+  </data>
+  <data name="SqlDataSource_CommandPage_QueryBuilderTooltip_Start" xml:space="preserve">
+    <value>Start Query Builder</value>
+  </data>
+  <data name="SqlDataSource_CommandPage_QueryBuilderTooltip_NotSupported" xml:space="preserve">
+    <value>The data source schema can not be retrieved.</value>
+  </data>
+  <data name="SqlDataSource_ConnectionPage_ExistingDataConnections" xml:space="preserve">
+    <value>Existing data connections</value>
+  </data>
+  <data name="SqlDataSource_ConnectionPage_BuildNewDataConnection" xml:space="preserve">
+    <value>Build new data connection</value>
+  </data>
+  <data name="SqlDataSource_ConnectionPage_Description" xml:space="preserve">
+    <value>Choose from existing data connections the data source to use or build a new one.</value>
+  </data>
+  <data name="SqlDataSource_ConnectionPage_Title" xml:space="preserve">
+    <value>Choose data connection</value>
+  </data>
+  <data name="SqlDataSource_ConnectionPage_NoConnectionsAvailable" xml:space="preserve">
+    <value>No connections available</value>
+  </data>
+  <data name="DataSource_ParametersPage_NameCannotBeEmpty" xml:space="preserve">
+    <value>Parameter name cannot be empty.</value>
+  </data>
+  <data name="DataSource_ParametersPage_DuplicateName" xml:space="preserve">
+    <value>Duplicate parameter name: '{0}'.</value>
+  </data>
+  <data name="SqlDataSource_PreviewDataSourcePage_Summary" xml:space="preserve">
+    <value>Total row count: {0} rows.</value>
+  </data>
+  <data name="SqlDataSource_PreviewDataSourcePage_ExecuteQuery" xml:space="preserve">
+    <value>Execute Query...</value>
+  </data>
+  <data name="SqlDataSource_PreviewDataSourcePage_ExecuteQueryLabel" xml:space="preserve">
+    <value>Click 'Execute Query' to preview the data source results...</value>
+  </data>
+  <data name="SqlDataSource_PreviewDataSourcePage_ShowTop" xml:space="preserve">
+    <value>Show top</value>
+  </data>
+  <data name="SqlDataSource_PreviewDataSourcePage_Rows" xml:space="preserve">
+    <value>rows</value>
+  </data>
+  <data name="SqlDataSource_PreviewDataSourcePage_Description" xml:space="preserve">
+    <value>Preview the result set returned by this data source.</value>
+  </data>
+  <data name="SqlDataSource_PreviewDataSourcePage_Title" xml:space="preserve">
+    <value>Preview data source results</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_Embedded" xml:space="preserve">
+    <value>Embedded in the report definition</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_Shared" xml:space="preserve">
+    <value>Use as shared connection</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_LabelDescription" xml:space="preserve">
+    <value>The data connection will be used from the report server and will be available for using from all of the server reports.</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_Description" xml:space="preserve">
+    <value>Choose the data connection location.</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_Title" xml:space="preserve">
+    <value>Data connection options</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_Alias" xml:space="preserve">
+    <value>Alias:</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_ExistOnServer" xml:space="preserve">
+    <value>The data connection already exists on the report server.</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_AlreadySaved" xml:space="preserve">
+    <value>The data connection is shared and will not be saved.</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_NoCreatePermissions" xml:space="preserve">
+    <value>You do not have permissions to create data connections on the report server.</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_CanNotSaveLocally" xml:space="preserve">
+    <value>You cannot save the data connection locally.</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_SaveOnServer" xml:space="preserve">
+    <value>The data connection will be saved on the report server and will be available for all report server reports.</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_SaveLocally" xml:space="preserve">
+    <value>The data connection will be saved locally and will be available for all local reports.</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_AvailableForLocalReports" xml:space="preserve">
+    <value>This option is available only for local reports.</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionPage_LocalConnectionWarning" xml:space="preserve">
+    <value>The data connection will be available for the current report only.</value>
+  </data>
+  <data name="SqlDataSource_Text" xml:space="preserve">
+    <value>Configure SQL Data Source - {0}</value>
+  </data>
+  <data name="SqlDataSource_SaveConnectionError" xml:space="preserve">
+    <value>' data connection cannot be saved. Try with a different name.</value>
+  </data>
+  <data name="SqlDataSource_ConnectionBuilder_Build" xml:space="preserve">
+    <value>Build...</value>
+  </data>
+  <data name="SqlDataSource_ConnectionBuilder_DataProvider" xml:space="preserve">
+    <value>Data provider</value>
+  </data>
+  <data name="SqlDataSource_ConnectionBuilder_ConnectionString" xml:space="preserve">
+    <value>Connection string</value>
+  </data>
+  <data name="SqlDataSource_ConnectionBuilder_Connecting" xml:space="preserve">
+    <value>Trying to connect to the database...</value>
+  </data>
+  <data name="SqlDataSource_ConnectionBuilder_Error" xml:space="preserve">
+    <value>Connection unsuccessful. Check the connection string and try again.{0}</value>
+  </data>
+  <data name="SqlDataSource_ConnectionBuilder_ErrorDetails" xml:space="preserve">
+    <value> Details: </value>
+  </data>
+  <data name="SqlDataSource_ConnectionBuilder_EnterConnectionString" xml:space="preserve">
+    <value>Please enter a connection string.</value>
+  </data>
+  <data name="DataSource_Preview_Error" xml:space="preserve">
+    <value>An error occurred while processing the data.</value>
+  </data>
+  <data name="CreateNewDataSource_InvalidDataSourceName" xml:space="preserve">
+    <value>Invalid data source name: '{0}'.</value>
+  </data>
+  <data name="CreateNewDataSource_SelectDataSourceType" xml:space="preserve">
+    <value>Please select a data source type.</value>
+  </data>
+  <data name="DataSource_TreeNode_NoDataSource" xml:space="preserve">
+    <value>No Data Source</value>
+  </data>
+  <data name="DataSource_Configure" xml:space="preserve">
+    <value>Configure...</value>
+  </data>
+  <data name="DataSourcePicker_CurrentlyDataBound" xml:space="preserve">
+    <value>Currently data bound to '{0}'.</value>
+  </data>
+  <data name="DataSourcePicker_ChooseDataSource" xml:space="preserve">
+    <value>Choose a data source to connect to data, or click '{0}' to create a new data source.</value>
+  </data>
+  <data name="DataSource_ConfigureDataSource" xml:space="preserve">
+    <value>Configure data source...</value>
+  </data>
+  <data name="EditParametersDialog_SpecifyValues" xml:space="preserve">
+    <value>Specify values for the data source parameters</value>
+  </data>
+  <data name="EditParametersDialog_Title" xml:space="preserve">
+    <value>Parameter Values Editor</value>
+  </data>
+  <data name="DataSource_Unexpected_EOF_reached" xml:space="preserve">
+    <value>Unexpected EOF reached.</value>
+  </data>
+  <data name="JsonDeserializer_NameValueDelimiterExpected" xml:space="preserve">
+    <value>Name-value delimiter expected.</value>
+  </data>
+  <data name="JsonDeserializer_UnexpectedToken" xml:space="preserve">
+    <value>Unexpected token.</value>
+  </data>
+  <data name="DataSources_UnknownDataSources" xml:space="preserve">
+    <value>Unknown Data Sources</value>
+  </data>
+  <data name="DataSources_DefaultDataSources" xml:space="preserve">
+    <value>Default Data Sources</value>
+  </data>
+  <data name="DataSources_ProjectDataSources" xml:space="preserve">
+    <value>Project Data Sources</value>
+  </data>
+  <data name="DataSources_CurrentDataSources" xml:space="preserve">
+    <value>Current Data Sources</value>
+  </data>
+  <data name="DataSources_UnknownDataSourceComponents" xml:space="preserve">
+    <value>Unknown data source components</value>
+  </data>
+  <data name="DataSources_DefaultDataSourceComponents" xml:space="preserve">
+    <value>Default data source components</value>
+  </data>
+  <data name="DataSources_ProjectDataSourceComponents" xml:space="preserve">
+    <value>Project data source components</value>
+  </data>
+  <data name="DataSources_CurrentDataSourceComponents" xml:space="preserve">
+    <value>Current data source components</value>
+  </data>
+  <data name="CsvDataSource_ChooseDataSourcePage_CSV_Inline_Label" xml:space="preserve">
+    <value>Either enter CSV as a text, drag and drop the CSV file in the area below, or select a file manually</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_LogoutMethod" xml:space="preserve">
+    <value>Logout Method:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_LogoutUrl" xml:space="preserve">
+    <value>Logout URL:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Method" xml:space="preserve">
+    <value>Login Method:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Password" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Response" xml:space="preserve">
+    <value>Response:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_TokenPath" xml:space="preserve">
+    <value>Token Path:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Url" xml:space="preserve">
+    <value>Login URL:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Username" xml:space="preserve">
+    <value>Username:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Body" xml:space="preserve">
+    <value>Body:</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_2Step_Description" xml:space="preserve">
+    <value>Enter all of the required properties to setup 2-step authentication.</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_2Step_Title" xml:space="preserve">
+    <value>Configure 2-step authentication</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Basic_Description" xml:space="preserve">
+    <value>Enter all of the required properties to setup basic authentication.</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Basic_Title" xml:space="preserve">
+    <value>Configure basic authentication</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_AuthenticationType" xml:space="preserve">
+    <value>Authentication Type:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_AuthType_2Step" xml:space="preserve">
+    <value>2-Step</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_AuthType_Basic" xml:space="preserve">
+    <value>Basic</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_AuthType_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Body" xml:space="preserve">
+    <value>Body:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Description" xml:space="preserve">
+    <value>Setup the properties of the HTTP request and response which will retrieve data from the web service or enter data as inline text or file.</value>
+  </data>
+  <data name="GraphQLDataSource_Connection_Description" xml:space="preserve">
+    <value>Setup the properties of the HTTP request and response which will retrieve data from the graphQL service or enter data as inline text or file.</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Encoding" xml:space="preserve">
+    <value>Encoding:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Method" xml:space="preserve">
+    <value>Method:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_ServiceUrl" xml:space="preserve">
+    <value>Service URL:</value>
+  </data>
+  <data name="GraphQLDataSource_Connection_ServiceUrl" xml:space="preserve">
+    <value>GraphQL Service URL:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_DataSelector" xml:space="preserve">
+    <value>Data Selector:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Title" xml:space="preserve">
+    <value>Configure data retrieval</value>
+  </data>
+  <data name="WebServiceDataSource_Parameters_Description" xml:space="preserve">
+    <value>Specify parameter name, type, value and design time value for each data source parameter. The value can be a default value or an expression to evaluate. The design-time value should be a constant value. This is necessary for retrieving the data source schema correctly at design time.</value>
+  </data>
+  <data name="WebServiceDataSource_Parameters_DesignTimeValue_Title" xml:space="preserve">
+    <value>Design-Time Value</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Parameters_Title" xml:space="preserve">
+    <value>Configure request parameters</value>
+  </data>
+  <data name="WebServiceDataSource_Parameters_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="WebServiceDataSource_Title" xml:space="preserve">
+    <value>Configure Web Service Data Source - {0}</value>
+  </data>
+  <data name="GraphQLDataSource_Title" xml:space="preserve">
+    <value>Configure GraphQL Data Source - {0}</value>
+  </data>
+  <data name="WebServiceDataSource_Auth_Parameters_Title" xml:space="preserve">
+    <value>Configure authentication parameters</value>
+  </data>
+  <data name="WebServiceDataSource_PreviewPage_Execute" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="WebServiceDataSource_FieldIsRequired" xml:space="preserve">
+    <value>Service URL or data as file/inline text is required.</value>
+  </data>
+  <data name="GraphQLDataSource_FieldIsRequired" xml:space="preserve">
+    <value>GraphQL Service URL or data as file/inline text is required.</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_DataFormat" xml:space="preserve">
+    <value>Data Format:</value>
+  </data>
+  <data name="WebServiceDataSource_Connection_Validation" xml:space="preserve">
+    <value>* Service URL or data as file/inline text is required.</value>
+  </data>
+  <data name="GraphQLDataSource_Connection_Validation" xml:space="preserve">
+    <value>* GraphQL Service URL or data as file/inline text is required.</value>
+  </data>
+  <data name="WebServiceDataSource_PreviewDataSourcePage_DownloadLabel" xml:space="preserve">
+    <value>Click 'Download' to preview the data source results...</value>
+  </data>
+  <data name="JsonDataSource_Title" xml:space="preserve">
+    <value>Configure JSON Data Source - {0}</value>
+  </data>
+  <data name="JsonDataSource_Connection_Title" xml:space="preserve">
+    <value>Configure data retrieval</value>
+  </data>
+  <data name="JsonDataSource_Connection_Description" xml:space="preserve">
+    <value>Enter JSON data as inline text or file.</value>
+  </data>
+  <data name="JsonDataSource_Connection_DataSelector" xml:space="preserve">
+    <value>Data Selector:</value>
+  </data>
+  <data name="JsonDataSource_Connection_DataFormat" xml:space="preserve">
+    <value>Data Format:</value>
+  </data>
+  <data name="JsonDataSource_Connection_Validation" xml:space="preserve">
+    <value>* JSON data as file/inline text is required.</value>
+  </data>
+  <data name="JsonDataSource_FieldIsRequired" xml:space="preserve">
+    <value>JSON data as file/inline text is required.</value>
+  </data>
+  <data name="JsonDataSource_PreviewPage_Execute" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="JsonDataSource_PreviewDataSourcePage_PreviewLabel" xml:space="preserve">
+    <value>Click 'Preview' to preview the data source results...</value>
+  </data>
+  <data name="CsvDataSource_ConfigureSeparatorsPage_TreatConsecutiveRecordSeparatorsAsOne" xml:space="preserve">
+    <value>Treat consecutive record separators as one</value>
+  </data>
+  <data name="WebServiceDataSource_Parameters_Value" xml:space="preserve">
+    <value>Value or Expression</value>
+  </data>
+  <data name="DataSource_PreviewDataSourcePage_DownloadDataSource" xml:space="preserve">
+    <value>Download the data to a file.</value>
+  </data>
+</root>
