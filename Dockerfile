@@ -1,12 +1,12 @@
-# Imagem base para rodar o app (apenas o runtime do .NET 8)
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+# Imagem base para rodar o app (apenas o runtime do .NET 9)
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 USER app
 WORKDIR /app
 # O .NET 8 escuta por padrão na porta 8080 em containers
 EXPOSE 8080 
 
 # Imagem do SDK para compilar a aplicação
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
