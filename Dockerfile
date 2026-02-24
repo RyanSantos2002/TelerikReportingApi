@@ -11,21 +11,21 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Copia apenas o .csproj primeiro para restaurar os pacotes (aproveita cache do Docker)
-COPY ["TelerikReportingApiNet8.csproj", "."]
-RUN dotnet restore "./TelerikReportingApiNet8.csproj"
+COPY ["TelerikReportingApi.csproj", "."]
+RUN dotnet restore "./TelerikReportingApi.csproj"
 
 # Copia o resto dos arquivos e compila
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "./TelerikReportingApiNet8.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./TelerikReportingApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # Publica a aplicação
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./TelerikReportingApiNet8.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./TelerikReportingApi.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # Gera a imagem final baseada na imagem de runtime (mais leve)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "TelerikReportingApiNet8.dll"]
+ENTRYPOINT ["dotnet", "TelerikReportingApi.dll"]
