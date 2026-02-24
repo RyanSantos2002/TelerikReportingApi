@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TelerikReportingApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a98b088a250822df2a6f4ce18241357586a751d5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TelerikReportingApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TelerikReportingApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

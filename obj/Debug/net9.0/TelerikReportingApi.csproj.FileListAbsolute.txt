@@ -20,6 +20,7 @@ C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\ne
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\System.Drawing.Common.dll
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\System.IO.Packaging.dll
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\System.Threading.AccessControl.dll
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\runtimes\win-arm64\native\sni.dll
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\runtimes\win-x64\native\sni.dll
@@ -27,6 +28,7 @@ C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\ne
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.Diagnostics.EventLog.dll
+C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\runtimes\win\lib\net8.0\System.Threading.AccessControl.dll
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\Telerik.Reporting.Data.Schema.dll
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\Telerik.Reporting.dll
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\bin\Debug\net9.0\Telerik.Reporting.JsonSerialization.dll
@@ -78,6 +80,7 @@ C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\obj\Debug\ne
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\obj\Debug\net9.0\TelerikReportingApi.csproj.CoreCompileInputs.cache
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\obj\Debug\net9.0\TelerikReportingApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\obj\Debug\net9.0\TelerikReportingApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\obj\Debug\net9.0\TelerikReportingApi.sourcelink.json
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\obj\Debug\net9.0\rjimswa.dswa.cache.json
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 C:\Users\Ryan.nunes\.gemini\antigravity\scratch\TelerikReportingApi\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json

@@ -14,6 +14,7 @@
           "System.Data.SqlClient": "4.8.6",
           "System.Drawing.Common": "8.0.4",
           "System.IO.Packaging": "6.0.0",
+          "System.Threading.AccessControl": "8.0.0",
           "Telerik.Reporting.Data.Schema": "20.0.26.211",
           "Telerik.Reporting": "20.0.26.211",
           "Telerik.Reporting.JsonSerialization": "20.0.26.211",
@@ -234,6 +235,22 @@
         }
       },
       "System.Security.Principal.Windows/4.7.0": {},
+      "System.Threading.AccessControl/8.0.0": {
+        "runtime": {
+          "lib/net8.0/System.Threading.AccessControl.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net8.0/System.Threading.AccessControl.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "Telerik.Reporting.Data.Schema/20.0.26.211": {
         "runtime": {
           "Telerik.Reporting.Data.Schema.dll": {
@@ -451,6 +468,13 @@
       "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "System.Threading.AccessControl/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cIed5+HuYz+eV9yu9TH95zPkqmm1J9Qps9wxjB335sU8tsqc2kGdlTEH9FZzZeCS8a7mNSEsN8ZkyhQp1gfdEw==",
+      "path": "system.threading.accesscontrol/8.0.0",
+      "hashPath": "system.threading.accesscontrol.8.0.0.nupkg.sha512"
     },
     "Telerik.Reporting.Data.Schema/20.0.26.211": {
       "type": "reference",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "q8PMU3mMktU=",
+  "dgSpecHash": "MmmZ/iyF/5A=",
   "success": true,
   "projectFilePath": "C:\\Users\\Ryan.nunes\\.gemini\\antigravity\\scratch\\TelerikReportingApi\\TelerikReportingApi.csproj",
   "expectedPackageFiles": [
@@ -25,7 +25,8 @@
     "C:\\Users\\Ryan.nunes\\.nuget\\packages\\system.io.packaging\\6.0.0\\system.io.packaging.6.0.0.nupkg.sha512",
     "C:\\Users\\Ryan.nunes\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
     "C:\\Users\\Ryan.nunes\\.nuget\\packages\\system.security.cryptography.protecteddata\\9.0.2\\system.security.cryptography.protecteddata.9.0.2.nupkg.sha512",
-    "C:\\Users\\Ryan.nunes\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+    "C:\\Users\\Ryan.nunes\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\Ryan.nunes\\.nuget\\packages\\system.threading.accesscontrol\\8.0.0\\system.threading.accesscontrol.8.0.0.nupkg.sha512"
   ],
   "logs": [
     {

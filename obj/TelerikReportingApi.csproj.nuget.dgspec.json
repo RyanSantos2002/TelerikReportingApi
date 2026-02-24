@@ -74,6 +74,10 @@
             "System.IO.Packaging": {
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "System.Threading.AccessControl": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
