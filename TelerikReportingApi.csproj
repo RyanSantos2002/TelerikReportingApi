@@ -33,6 +33,9 @@
     <Reference Include="Telerik.Reporting.JsonSerialization">
       <HintPath>libs\Telerik.Reporting.JsonSerialization.dll</HintPath>
     </Reference>
+    <Reference Include="Telerik.Licensing.Runtime">
+      <HintPath>libs\Telerik.Licensing.Runtime.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
