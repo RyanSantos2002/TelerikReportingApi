@@ -3,6 +3,11 @@ using Telerik.Reporting.Services;
 using Telerik.WebReportDesigner.Services;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
+using System.Diagnostics;
+
+// Ativa o log interno da Telerik para um arquivo na raiz do projeto
+Trace.Listeners.Add(new TextWriterTraceListener(File.CreateText("telerik_log.txt")));
+Trace.AutoFlush = true;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -34,14 +39,14 @@ builder.Services.AddCors(options =>
 // --- 3. CONFIGURANDO TELERIK REPORTING SERVICES ---
 string reportsPath = Path.Combine(builder.Environment.ContentRootPath, "Reports");
 
-builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
-    new ReportServiceConfiguration
-    {
-        ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
-        HostAppId = "TelerikReportingApi",
-        Storage = new Telerik.Reporting.Cache.File.FileStorage(),
-        ReportSourceResolver = new UriReportSourceResolver(reportsPath)
-    });
+// O método AddTelerikReporting é fundamental para registrar os formatos de renderização (HTML5 ou PDF)
+builder.Services.AddMvc().AddTelerikReporting(options => 
+{
+    options.ReportingEngineConfiguration = builder.Configuration;
+    options.HostAppId = "TelerikReportingApi";
+    options.Storage = new Telerik.Reporting.Cache.File.FileStorage();
+    options.ReportSourceResolver = new UriReportSourceResolver(reportsPath);
+});
 
 // --- 4. CONFIGURANDO TELERIK WEB REPORT DESIGNER SERVICES ---
 builder.Services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => 
