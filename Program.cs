@@ -1,9 +1,13 @@
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Telerik.Reporting.Services;
+using Telerik.Reporting.Services.AspNetCore; // Namespace necessário para o AddTelerikReporting
 using Telerik.WebReportDesigner.Services;
 using Microsoft.AspNetCore.Localization;
 using System.Globalization;
 using System.Diagnostics;
+
+[assembly: global::Telerik.Licensing.EvidenceAttribute("eyJhbGciOiJSUzI1NiIsInR5cCI6IlRlbGVyaWsgTGljZW5zZSBFdmlkZW5jZSJ9.eyJjb2RlIjoiUkVQT1JUSU5HIiwidHlwZSI6InBlcnBldHVhbCIsImV4cGlyYXRpb24iOjE2NjYyOTgyMTcsInVzZXJJZCI6ImNkNzY1M2YyLTZhZTItNDM5MC05OWM2LTM3NWU2ZWNhNTZjYiIsImxpY2Vuc2VJZCI6ImI1ZjIzNDIyLWQwM2MtNGIwYi05MTE3LWEyNzhkNDkzNjk3MCJ9.GqoyIlXPQEim3z6x-0HyFyBu5laSdZ5UNgqkuYCC24UYZodZ67LVatuCoaSCVIVmaqPuD_TeAbnEz8kGc59iL4NCsQBgVewvuaWs-nbUPeRIjBlmkoXGxz81jzHsIBhvgchgdAMcaX-dhFQiRFtgXFOya5NNFgU5MoDVIiIiIA8TaUdlJZiZ0tPhchhO9yoyZGaQFODz4WFkQ-5JAFhoPsqViisOtu-holknGVLcjF2Kc_yHPq5m2a-ExeBTf-Q7JyiBu8tk64BvjYD8jfBuWFcMgXacGdzz9yykaVjLLVcTJ4FfaDAffsEpNsF9kKy6mBulQO6IGCkJxagrRj9MXg")]
+[assembly: global::Telerik.Licensing.EvidenceAttribute("eyJhbGciOiJSUzI1NiIsInR5cCI6IlRlbGVyaWsgTGljZW5zZSBFdmlkZW5jZSJ9.eyJjb2RlIjoiUkVQT1JUSU5HIiwidHlwZSI6InRyaWFsIiwiZXhwaXJhdGlvbiI6MTc3MTcwNzAyOCwidXNlcklkIjoiY2Q3NjUzZjItNmFlMi00MzkwLTk5YzYtMzc1ZTZlY2E1NmNiIiwibGljZW5zZUlkIjoiYjVmMjM0MjItZDAzYy00YjBiLTkxMTctYTI3OGQ0OTM2OTcwIn0.2Cnc61ed8QosHOHJwr33AIJ6BpeRXyNHcQzSQ-A0bhoxXTilsh-lbq9USZdAx4AJ3rfQqc_y9EVn3BnDvEPvFJ84WkCkYC2HgWXO0fVDWeGhexbaJof1A9SiCSniJ9kUNBrRyAdPW_IVf96Vx6kvFJLE5-KQpScYK932TUpj8Gr9fMheZmgkcyObM33m7v_Ryox8QkUS_p20R_JnidzxW4PoEVghUJ1CVBXXEXR1tWmR-kOwbzpH9cON2QatRwcBrEKDUuXG75A3CDhMuM_Un2DEoZpqAFnGCJo96kY36pfXnB6OplwR3OK8utPgvcMX00xWVPuQggXv61SWgWpozA")]
 
 // Ativa o log interno da Telerik para um arquivo na raiz do projeto
 Trace.Listeners.Add(new TextWriterTraceListener(File.CreateText("telerik_log.txt")));
@@ -39,14 +43,14 @@ builder.Services.AddCors(options =>
 // --- 3. CONFIGURANDO TELERIK REPORTING SERVICES ---
 string reportsPath = Path.Combine(builder.Environment.ContentRootPath, "Reports");
 
-// O método AddTelerikReporting é fundamental para registrar os formatos de renderização (HTML5 ou PDF)
-builder.Services.AddMvc().AddTelerikReporting(options => 
-{
-    options.ReportingEngineConfiguration = builder.Configuration;
-    options.HostAppId = "TelerikReportingApi";
-    options.Storage = new Telerik.Reporting.Cache.File.FileStorage();
-    options.ReportSourceResolver = new UriReportSourceResolver(reportsPath);
-});
+builder.Services.TryAddSingleton<IReportServiceConfiguration>(sp =>
+    new ReportServiceConfiguration
+    {
+        ReportingEngineConfiguration = sp.GetService<IConfiguration>(),
+        HostAppId = "TelerikReportingApi",
+        Storage = new Telerik.Reporting.Cache.File.FileStorage(),
+        ReportSourceResolver = new UriReportSourceResolver(reportsPath)
+    });
 
 // --- 4. CONFIGURANDO TELERIK WEB REPORT DESIGNER SERVICES ---
 builder.Services.TryAddSingleton<IReportDesignerServiceConfiguration>(sp => 
