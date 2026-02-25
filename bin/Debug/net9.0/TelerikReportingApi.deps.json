@@ -23,6 +23,11 @@
         },
         "runtime": {
           "TelerikReportingApi.dll": {}
+        },
+        "resources": {
+          "pt-BR/TelerikReportingApi.resources.dll": {
+            "locale": "pt-BR"
+          }
         }
       },
       "Microsoft.AspNetCore.JsonPatch/9.0.2": {

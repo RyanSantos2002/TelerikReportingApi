@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Telerik Web Report Designer - PT-BR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Kendo UI -->
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/themes/10.0.1/default/default-ocean-blue.css" />
+    <script src="https://kendo.cdn.telerik.com/2023.3.1114/js/kendo.all.min.js"></script>
+
+    <!-- Web Report Designer Scripts (Servidos pela API) -->
+    <script src="/api/reportdesigner/resources/js/webReportDesigner"></script>
+
+    <style>
+        body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; }
+        #webReportDesigner1 {
+            position: absolute;
+            left: 0; right: 0; top: 40px; bottom: 0;
+        }
+        .nav-header { height: 40px; line-height: 40px; padding: 0 15px; background: #333; color: #fff; }
+        .nav-header a { color: #fff; text-decoration: none; margin-left: 15px; }
+    </style>
+</head>
+<body>
+    <div class="nav-header">
+        <strong>Telerik Web Report Designer</strong>
+        <a href="index.html">Voltar para o Viewer</a>
+    </div>
+
+    <div id="webReportDesigner1">
+        Carregando Designer...
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#webReportDesigner1").telerik_WebReportDesigner({
+                toolbox: {
+                    items: [
+                        { name: "HtmlTextBox", text: "HTML Text Box" },
+                        { name: "TextBox", text: "Text Box" },
+                        { name: "Table", text: "Table" },
+                        { name: "Crosstab", text: "Crosstab" },
+                        { name: "List", text: "List" },
+                        { name: "Graph", text: "Graph" },
+                        { name: "Map", text: "Map" },
+                        { name: "Shape", text: "Shape" },
+                        { name: "PictureBox", text: "Picture Box" }
+                    ]
+                },
+                serviceUrl: "/api/reportdesigner/",
+                report: "SampleReport.trdp"
+            });
+        });
+    </script>
+</body>
+</html>

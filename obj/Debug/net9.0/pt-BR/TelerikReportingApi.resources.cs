@@ -11,12 +11,13 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("TelerikReportingApi")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyCopyrightAttribute(" ")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78efb83782020de2539e5cd7d27e7f98719d5e48")]
 [assembly: System.Reflection.AssemblyProductAttribute("TelerikReportingApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TelerikReportingApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyCultureAttribute("pt-BR")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 
